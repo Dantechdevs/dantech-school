@@ -11,7 +11,7 @@
 			// Init Pagination
 			$this->pagination->initialize($config);
 
-			$data['title'] = 'Latest Posts';
+			$data['title'] = 'Latest Courses';
 
 			$data['posts'] = $this->post_model->get_posts(FALSE, $config['per_page'], $offset);
 
@@ -42,7 +42,7 @@
 				redirect('users/login');
 			}
 
-			$data['title'] = 'Create Post';
+			$data['title'] = 'Create Course';
 
 			$data['categories'] = $this->post_model->get_categories();
 
@@ -74,7 +74,7 @@
 				$this->post_model->create_post($post_image);
 
 				// Set message
-				$this->session->set_flashdata('post_created', 'Your post has been created');
+				$this->session->set_flashdata('post_created', 'Your Course has been created');
 
 				redirect('posts');
 			}
@@ -89,7 +89,7 @@
 			$this->post_model->delete_post($id);
 
 			// Set message
-			$this->session->set_flashdata('post_deleted', 'Your post has been deleted');
+			$this->session->set_flashdata('post_deleted', 'Your Course has been deleted');
 
 			redirect('posts');
 		}
@@ -114,7 +114,7 @@
 				show_404();
 			}
 
-			$data['title'] = 'Edit Post';
+			$data['title'] = 'Edit Course';
 
 			$this->load->view('templates/header');
 			$this->load->view('posts/edit', $data);
@@ -130,7 +130,7 @@
 			$this->post_model->update_post();
 
 			// Set message
-			$this->session->set_flashdata('post_updated', 'Your post has been updated');
+			$this->session->set_flashdata('post_updated', 'Your course has been updated');
 
 			redirect('posts');
 		}

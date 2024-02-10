@@ -16,7 +16,16 @@
 				$this->load->view('templates/footer');
 			} else {
 				$this->comment_model->create_comment($post_id);
-				redirect('posts/'.$slug);
+				$data['title'] = $data['post']['title'];
+                 $data['post'] = $this->post_model->get_posts($slug);
+                 $data['post'] = $this->post_model->get_posts($slug);
+
+			$post_id = $data['post']['id'];
+			$data['comments'] = $this->comment_model->get_comments($post_id);
+			
+			$this->load->view('templates/header');
+			$this->load->view('posts/view', $data);
+			$this->load->view('templates/footer');
 			}
 		}
 	}

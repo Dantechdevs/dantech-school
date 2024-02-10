@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 //posts
-$route['articles/posts'] = 'posts/index';
+$route['posts'] = 'posts/index';
 
 $route['posts/index'] = 'posts/index';
 $route['posts/create'] = 'posts/create';

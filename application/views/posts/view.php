@@ -13,7 +13,7 @@
 	</form>
 <?php endif; ?>
 <hr>
-<h3>Comments</h3>
+<h3>Reviews</h3>
 <?php if($comments) : ?>
 	<?php foreach($comments as $comment) : ?>
 		<div class="well">
@@ -21,10 +21,10 @@
 		</div>
 	<?php endforeach; ?>
 <?php else : ?>
-	<p>No Comments To Display</p>
+	<p>0 Reviews To Display</p>
 <?php endif; ?>
 <hr>
-<h3>Add Comment</h3>
+<h3>Add Review</h3>
 <?php echo validation_errors(); ?>
 <?php echo form_open('comments/create/'.$post['id']); ?>
 	<div class="form-group">
