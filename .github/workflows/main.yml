@@ -11,7 +11,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
-        server: ${{ secrets.ftp.dantechdevelopers.com }}
-        username: ${{ secrets.Main@dantechdevelopers.com }}
-        password: ${{ secrets.Greenzone@2023}}
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD}}
        
