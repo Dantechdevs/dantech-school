@@ -29,4 +29,12 @@
 			$this->db->delete('categories');
 			return true;
 		}
+
+		//header categories
+			public function get_headcategories(){
+			$this->db->order_by('name');
+			$this->db->limit(5);
+			$query = $this->db->get('categories');
+			return $query->result_array();
+		}
 	}

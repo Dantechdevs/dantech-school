@@ -77,7 +77,7 @@
 		public function getSliderPosts(){
 			   $this->db->order_by('posts.id', 'DESC');
 				$this->db->join('categories', 'categories.id = posts.category_id');
-				$this->db->limit(4);
+				$this->db->limit(3);
 				$query = $this->db->get('posts');
 				return $query->result_array();
 		}

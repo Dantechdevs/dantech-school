@@ -1,9 +1,13 @@
-<?php echo validation_errors(); ?>
+<?php require_once(APPPATH.'views/pages/inc/banner.php');?>
+
 
 <?php echo form_open('users/register'); ?>
 	<div class="row">
+		<div class="col-md-3">
+			<p  style="color:red !important;"><?php echo validation_errors(); ?></p>
+		</div>
 		<div class="col-md-4 col-md-offset-4">
-			<h1 class="text-center"><?= $title; ?></h1>
+			<h1 class="text-center"><?= $pagetitle; ?></h1>
 			<div class="form-group">
 				<label>Name</label>
 				<input type="text" class="form-control" name="name" placeholder="Name">
@@ -32,3 +36,4 @@
 		</div>
 	</div>
 <?php echo form_close(); ?>
+<hr>

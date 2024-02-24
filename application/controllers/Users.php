@@ -2,7 +2,7 @@
 	class Users extends CI_Controller{
 		// Register user
 		public function register(){
-			$data['title'] = 'Sign Up';
+			$data['pagetitle'] = 'Sign Up';
 
 			$this->form_validation->set_rules('name', 'Name', 'required');
 			$this->form_validation->set_rules('username', 'Username', 'required|callback_check_username_exists');
@@ -23,13 +23,13 @@
 				// Set message
 				$this->session->set_flashdata('user_registered', 'You are now registered and can log in');
 
-				redirect('posts');
+				redirect('/');
 			}
 		}
 
 		// Log in user
 		public function login(){
-			$data['title'] = 'Sign In';
+			$data['pagetitle'] = 'Sign In';
 
 			$this->form_validation->set_rules('username', 'Username', 'required');
 			$this->form_validation->set_rules('password', 'Password', 'required');
@@ -61,7 +61,7 @@
 					// Set message
 					$this->session->set_flashdata('user_loggedin', 'You are now logged in');
 
-					redirect('posts');
+					redirect('/');
 				} else {
 					// Set message
 					$this->session->set_flashdata('login_failed', 'Login is invalid');
