@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Feb 10, 2024 at 06:53 AM
+-- Generation Time: Feb 10, 2024 at 06:56 PM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `andy`
+-- Database: `dantechdev`
 --
 
 -- --------------------------------------------------------
@@ -39,22 +39,22 @@ CREATE TABLE `categories` (
 --
 
 INSERT INTO `categories` (`id`, `user_id`, `name`, `created_at`) VALUES
-(1, 1, 'Technology', '2017-03-04 13:03:18'),
-(2, 1, 'Business', '2017-03-04 13:14:40'),
-(3, 1, 'Sports', '2024-02-07 17:08:51'),
-(4, 1, 'Fashion', '2024-02-07 17:08:51'),
+(1, 1, 'php', '2017-03-04 13:03:18'),
+(2, 1, 'C++', '2017-03-04 13:14:40'),
+(3, 1, 'Javascript', '2024-02-07 17:08:51'),
+(4, 1, 'Java', '2024-02-07 17:08:51'),
 (5, 1, 'Sports', '2024-02-07 17:08:55'),
 (6, 1, 'Fashion', '2024-02-07 17:08:55'),
-(7, 1, 'Trending', '2024-02-07 17:10:33'),
-(8, 1, 'Gossip', '2024-02-07 17:10:33'),
-(9, 1, 'Trend', '2024-02-07 17:10:33'),
-(10, 1, 'Education', '2024-02-07 17:10:33'),
-(11, 1, 'Sex-and-Relationships', '2024-02-07 17:10:33'),
-(12, 1, 'Trending', '2024-02-07 17:10:38'),
-(13, 1, 'Gossip', '2024-02-07 17:10:38'),
-(14, 1, 'Trend', '2024-02-07 17:10:38'),
-(15, 1, 'Education', '2024-02-07 17:10:38'),
-(16, 1, 'Sex-and-Relationships', '2024-02-07 17:10:38');
+(7, 1, 'Ui/Ux', '2024-02-07 17:10:33'),
+(8, 1, 'Css', '2024-02-07 17:10:33'),
+(9, 1, 'CorelDraw', '2024-02-07 17:10:33'),
+(10, 1, 'C', '2024-02-07 17:10:33'),
+(11, 1, 'Blog', '2024-02-07 17:10:33'),
+(12, 1, 'Frameworks', '2024-02-07 17:10:38'),
+(13, 1, 'Scala', '2024-02-07 17:10:38'),
+(14, 1, 'Photoshop', '2024-02-07 17:10:38'),
+(15, 1, 'Html', '2024-02-07 17:10:38'),
+(16, 1, 'Python', '2024-02-07 17:10:38');
 
 -- --------------------------------------------------------
 
@@ -144,7 +144,8 @@ INSERT INTO `posts` (`id`, `category_id`, `user_id`, `title`, `slug`, `body`, `p
 (18, 3, 1, 'Generates an insert string based on the data you supply, and runs the query. ', 'Generates-an-insert-string-based-on-the-data-you-supply-and-runs-the-query-7.', 'Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. ', 'five.jpg', '2024-02-07 17:20:34'),
 (19, 13, 1, 'Generates an insert string based on the data you supply, and runs the query. ', 'Generates-an-insert-string-based-on-the-data-you-supply-and-runs-the-query-8.', 'Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. ', 'six.jpg', '2024-02-07 17:20:34'),
 (20, 5, 1, 'Generates an insert string based on the data you supply, and runs the query. ', 'Generates-an-insert-string-based-on-the-data-you-supply-and-runs-the-query-9.', 'Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. ', 'seven.jpg', '2024-02-07 17:20:34'),
-(21, 4, 1, 'Generates an insert string based on the data you supply, and runs the query. ', 'Generates-an-insert-string-based-on-the-data-you-supply-and-runs-the-query-10.', 'Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. ', 'nine.jpg', '2024-02-07 17:20:34');
+(21, 4, 1, 'Generates an insert string based on the data you supply, and runs the query. ', 'Generates-an-insert-string-based-on-the-data-you-supply-and-runs-the-query-10.', 'Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. Generates an insert string based on the data you supply, and runs the query. ', 'nine.jpg', '2024-02-07 17:20:34'),
+(22, 16, 3, 'new course', 'new-course', 'body', 'img1.jpg', '2024-02-10 07:34:01');
 
 -- --------------------------------------------------------
 
@@ -167,8 +168,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `zipcode`, `email`, `username`, `password`, `register_date`) VALUES
-(1, 'Brad Traversy', '01913', 'brad@gmail.com', 'brad', 'e10adc3949ba59abbe56e057f20f883e', '2017-04-10 13:14:31'),
-(2, 'John Doe', '90210', 'jdoe@gmail.com', 'john', 'e10adc3949ba59abbe56e057f20f883e', '2017-04-10 14:12:14');
+(1, 'test user 1', '01913', 'test1@test.com', 'Admin', '05b0afd266cc205432b8dad3f3413c28', '2017-04-10 13:14:31'),
+(2, 'John Doe', '90210', 'jdoe@gmail.com', 'john', 'e10adc3949ba59abbe56e057f20f883e', '2017-04-10 14:12:14'),
+(3, 'test 5', '3436', 'test5@test.com', 'test5', '05b0afd266cc205432b8dad3f3413c28', '2024-02-10 07:30:15');
 
 --
 -- Indexes for dumped tables
@@ -212,7 +214,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT for table `comments`
@@ -224,13 +226,13 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

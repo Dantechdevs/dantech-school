@@ -11,7 +11,7 @@
 			// Init Pagination
 			$this->pagination->initialize($config);
 
-			$data['title'] = 'Latest Courses';
+			$data['pagetitle'] = 'Latest Courses';
 
 			$data['posts'] = $this->post_model->get_posts(FALSE, $config['per_page'], $offset);
 
@@ -29,7 +29,7 @@
 				show_404();
 			}
 
-			$data['title'] = $data['post']['title'];
+			$data['pagetitle'] = $data['post']['title'];
 
 			$this->load->view('templates/header');
 			$this->load->view('posts/view', $data);
@@ -114,7 +114,7 @@
 				show_404();
 			}
 
-			$data['title'] = 'Edit Course';
+			$data['pagetitle'] = 'Edit Course';
 
 			$this->load->view('templates/header');
 			$this->load->view('posts/edit', $data);
